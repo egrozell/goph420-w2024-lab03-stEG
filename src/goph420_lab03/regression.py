@@ -22,7 +22,7 @@ def multi_regress(y, Z):
     """
 
     ZTZ = np.matmul(np.transpose(Z), Z)  # Multiply ZTZ (Z Transpose Z)
-    ZTy = np.matmul(np.transpose(Z), y)  # Multiply ZTZ (Z Transpose Y)
+    ZTy = np.matmul(np.transpose(Z), y)  # Multiply ZTy (Z Transpose Y)
 
     e_avg = y - np.mean(y)
     # Residuals Multiply the inverse of ZTZ by ZTy
